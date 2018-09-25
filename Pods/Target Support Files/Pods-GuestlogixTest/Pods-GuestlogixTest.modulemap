@@ -1,0 +1,6 @@
+framework module Pods_GuestlogixTest {
+  umbrella header "Pods-GuestlogixTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
