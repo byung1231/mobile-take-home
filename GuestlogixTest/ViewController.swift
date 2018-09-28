@@ -248,7 +248,7 @@ class ViewController: UIViewController {
                             var tempArrayCount = 0
                             var tempElementCount = tempCount2 + 1 // adding 1 b/c it's a count instead of an index
                             
-                            // getting the flatenned position of the previous array using the 2nd level count of the current position
+                            // getting the flattened position of the previous array using the 2nd level count of the current position
                             while(tempElementCount > 0){
                                 tempElementCount -= nextRoutesToBeTested[i-1][tempArrayCount].count
                                 tempArrayCount += 1
