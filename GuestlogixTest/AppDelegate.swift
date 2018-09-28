@@ -11,7 +11,7 @@ import CoreData
 import GoogleMaps
 
 // 1
-let googleApiKey = "ENTER_KEY_HERE"
+//let googleApiKey = "AIzaSyCJYiT5IU0WW4b-h2LXQ6mE9x2VGxVRyig"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //2
-        GMSServices.provideAPIKey(googleApiKey)
+        GMSServices.provideAPIKey("AIzaSyCJYiT5IU0WW4b-h2LXQ6mE9x2VGxVRyig")
         return true
     }
 }

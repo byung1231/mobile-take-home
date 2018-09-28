@@ -7,5 +7,6 @@ target 'GuestlogixTest' do
 
   # Pods for GuestlogixTest
 	pod 'GoogleMaps'
+	pod 'GooglePlaces'
 
 end

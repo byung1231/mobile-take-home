@@ -14,6 +14,12 @@
 		B4027F8521597B8E00DAA3C1 /* GuestlogixTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4027F8321597B8E00DAA3C1 /* GuestlogixTest.xcdatamodeld */; };
 		B4027F8721597B9E00DAA3C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4027F8621597B9E00DAA3C1 /* Assets.xcassets */; };
 		B4027F8A21597B9E00DAA3C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4027F8821597B9E00DAA3C1 /* LaunchScreen.storyboard */; };
+		B4ADF8422159F0AB002D7141 /* routes.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4ADF83F2159F0AA002D7141 /* routes.csv */; };
+		B4ADF8432159F0AB002D7141 /* airlines.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4ADF8402159F0AA002D7141 /* airlines.csv */; };
+		B4ADF8442159F0AB002D7141 /* airports.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4ADF8412159F0AA002D7141 /* airports.csv */; };
+		B4ADF8462159F821002D7141 /* DataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ADF8452159F821002D7141 /* DataManger.swift */; };
+		B4F262B7215E091500EA36AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F262B6215E091400EA36AA /* Extensions.swift */; };
+		B4F262B9215E096900EA36AA /* LayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F262B8215E096900EA36AA /* LayoutConstraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		B4027F8621597B9E00DAA3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4027F8921597B9E00DAA3C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4027F8B21597B9E00DAA3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4ADF83F2159F0AA002D7141 /* routes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.csv; sourceTree = "<group>"; };
+		B4ADF8402159F0AA002D7141 /* airlines.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airlines.csv; sourceTree = "<group>"; };
+		B4ADF8412159F0AA002D7141 /* airports.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.csv; sourceTree = "<group>"; };
+		B4ADF8452159F821002D7141 /* DataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManger.swift; sourceTree = "<group>"; };
+		B4F262B6215E091400EA36AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B4F262B8215E096900EA36AA /* LayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraints.swift; sourceTree = "<group>"; };
 		C0CDA39618BEDD286E4A45F6 /* Pods-GuestlogixTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuestlogixTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuestlogixTest/Pods-GuestlogixTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,14 +85,28 @@
 			children = (
 				B4027F7C21597B8E00DAA3C1 /* AppDelegate.swift */,
 				B4027F7E21597B8E00DAA3C1 /* ViewController.swift */,
+				B4ADF8452159F821002D7141 /* DataManger.swift */,
+				B4F262B8215E096900EA36AA /* LayoutConstraints.swift */,
+				B4F262B6215E091400EA36AA /* Extensions.swift */,
 				B4027F8021597B8E00DAA3C1 /* Main.storyboard */,
 				B4027F8621597B9E00DAA3C1 /* Assets.xcassets */,
 				B4027F8821597B9E00DAA3C1 /* LaunchScreen.storyboard */,
 				B4027F8B21597B9E00DAA3C1 /* Info.plist */,
 				B4027F8321597B8E00DAA3C1 /* GuestlogixTest.xcdatamodeld */,
+				B4ADF83E2159F0AA002D7141 /* data */,
 			);
 			path = GuestlogixTest;
 			sourceTree = "<group>";
+		};
+		B4ADF83E2159F0AA002D7141 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B4ADF83F2159F0AA002D7141 /* routes.csv */,
+				B4ADF8402159F0AA002D7141 /* airlines.csv */,
+				B4ADF8412159F0AA002D7141 /* airports.csv */,
+			);
+			path = data;
+			sourceTree = SOURCE_ROOT;
 		};
 		D3C03C7A347B48802D7A11BD /* Pods */ = {
 			isa = PBXGroup;
@@ -152,7 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4027F8A21597B9E00DAA3C1 /* LaunchScreen.storyboard in Resources */,
+				B4ADF8432159F0AB002D7141 /* airlines.csv in Resources */,
+				B4ADF8442159F0AB002D7141 /* airports.csv in Resources */,
 				B4027F8721597B9E00DAA3C1 /* Assets.xcassets in Resources */,
+				B4ADF8422159F0AB002D7141 /* routes.csv in Resources */,
 				B4027F8221597B8E00DAA3C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,10 +197,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GuestlogixTest/Pods-GuestlogixTest-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -203,9 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F262B9215E096900EA36AA /* LayoutConstraints.swift in Sources */,
+				B4F262B7215E091500EA36AA /* Extensions.swift in Sources */,
 				B4027F7F21597B8E00DAA3C1 /* ViewController.swift in Sources */,
 				B4027F8521597B8E00DAA3C1 /* GuestlogixTest.xcdatamodeld in Sources */,
 				B4027F7D21597B8E00DAA3C1 /* AppDelegate.swift in Sources */,
+				B4ADF8462159F821002D7141 /* DataManger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
