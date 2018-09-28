@@ -2,7 +2,7 @@
 
 
 
-# 1. Relevant files
+## 1. Relevant files
 
 **\GuestlogixTest\ViewController.swift** - main viewcontroller, containing the route search logic
 
@@ -14,9 +14,9 @@
 
 
 
-# 2. Overview
+## 2. Overview
 
-##   2.1. Search logic
+###   2.1. Search logic
 
 Each possible route found will be stored a 3-d array \nextRoutesToBeTested\, starting with the origin.
 
@@ -60,13 +60,13 @@ and each iteration of search will go through each entry, treating each entry as 
 Once the destination has been found, the traced back which is explained in \checkPath()\ before the traversal part
 
 
-##  2.2 Displaying routes
+###  2.2 Displaying routes
 
 - The routes are displayed on a Google Maps mapview (Google Maps API used), with all the airports along the path marked (with basic details available when tapped on the pins, such as the name of the airport, city and country), and the paths drawn with blue lines.
 
 
 
-# 3. Assumptions
+## 3. Assumptions
 
 - The search will assume there won't be more than 7 stops in any routes.
 - Search will stop if the destination has not been found after going over 7 levels in the search (realistically, and also to prevent infinite loops), and will alert the users as no possible routes existing
