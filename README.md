@@ -30,29 +30,29 @@ Along the search (done in \checkPath()\), starting from the origin:
 
 For example, for the following routes:
 
-A,B
-A,C
-A,D
-B,E
-B,F
-C,G
-C,H
-D,I
-E,J
-F,K
-G,L
-G,M
-H,O
-H,P
-I,Q
+A,B<br />
+A,C<br />
+A,D<br />
+B,E<br />
+B,F<br />
+C,G<br />
+C,H<br />
+D,I<br />
+E,J<br />
+F,K<br />
+G,L<br />
+G,M<br />
+H,O<br />
+H,P<br />
+I,Q<br />
 
 and if we are looking for the path from A to P,
 the array \nextRoutesToBeTested\ would be added as follows:
 
-[0][0]["A"]
-[1][0]["B","C","D"]
-[2][0]["E","F"], [2][1]["G","H"], [2][2]["I"]
-[3][0]["J"], [3][1]["K"], [3][2]["L,M"], [3][3]["O","P"], [3][4]["Q"]
+[0][0]["A"]<br />
+[1][0]["B","C","D"]<br />
+[2][0]["E","F"], [2][1]["G","H"], [2][2]["I"]<br />
+[3][0]["J"], [3][1]["K"], [3][2]["L,M"], [3][3]["O","P"], [3][4]["Q"]<br />
 
 Search will be done in a breadth first search manner rather than depth first, starting from the first row,
 and each iteration of search will go through each entry, treating each entry as the temporary origin
